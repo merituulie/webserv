@@ -1,18 +1,16 @@
-# HTTP Server Implementation README 🌐
+# weberver 🌐
 
-This project aims to implement an **HTTP server** based on the *Hypertext Transfer Protocol (HTTP)* specifications, focusing on serving static websites, handling dynamic content through *CGI* (Common Gateway Interface), and supporting various **HTTP methods** like **GET**, **POST**, and **DELETE**.
+This project implements an **HTTP server** based on the *Hypertext Transfer Protocol (HTTP)* specifications, focusing on serving static websites and handling dynamic content through *CGI* (Common Gateway Interface), and supporting various **HTTP methods** like **GET**, **POST**, and **DELETE**.
 
 ## Introduction 🚀
 
 The *Hypertext Transfer Protocol (HTTP)* is fundamental for distributed, collaborative, hypermedia information systems, forming the backbone of communication for the World Wide Web. HTTP facilitates the transfer of hypertext documents, allowing users to access resources through hyperlinks via web browsers.
 
-## Requirements 📋
+## Features 📋
 
 - **Configuration File Handling**: The program accepts a configuration file .config as an argument or uses a default configuration file.
-- **Non-blocking I/O**: The server does not block and uses only one \`poll()\` (or equivalent) for all I/O operations.
 - **Compatibility**: The server is compatible with Google Chrome and adheres to HTTP version 1.1 standards.
 - **Error Handling**: Proper *HTTP response status codes* and default error pages are provided.
-- **Static Website Serving**: The server is be able to serve a fully static website.
 - **HTTP Methods**: Supports **GET**, **POST**, and **DELETE** methods.
 - **File Upload**: Clients are able to upload files.
 - **Configuration Flexibility**: The configuration file allows for setting up servers, defining routes, limiting client body size, directory listing, setting up where to upload files, etc.
